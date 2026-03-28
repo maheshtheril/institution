@@ -4,7 +4,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 enum Role {
@@ -18,50 +17,47 @@ model User {
   password  String
   name      String
   role      Role     @default(STUDENT)
-  student   Student? 
+  student   Student?
   createdAt DateTime @default(now())
 }
 
 model Student {
-  id                String   @id @default(uuid())
-  user              User     @relation(fields: [userId], references: [id])
-  userId            String   @unique
-  admissionId       String   @unique
-  className         String
-  school            String
-  joiningDate       DateTime
-  parentsName       String
-  parentsOccupation String?
-  residentialAddress String
-  permanentAddress   String
-  attendance        Attendance[]
-  fees              Fee[]
+  id          String   @id @default(uuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id])
+  schoolName  String
+  className   String
+  fatherName  String
+  motherName  String
+  phoneNumber String
+  address     String
+  feeHistory  FeeRecord[]
+  attendance  Attendance[]
+  createdAt   DateTime @default(now())
+}
+
+model FeeRecord {
+  id        String   @id @default(uuid())
+  studentId String
+  student   Student  @relation(fields: [studentId], references: [id])
+  amount    Float
+  date      DateTime
+  month     String
+  status    String   @default("PAID")
 }
 
 model Attendance {
   id        String   @id @default(uuid())
-  student   Student  @relation(fields: [studentId], references: [id])
   studentId String
-  date      DateTime @default(now())
-  status    String   
-}
-
-model Fee {
-  id          String   @id @default(uuid())
-  student     Student  @relation(fields: [studentId], references: [id])
-  studentId   String
-  type        String   
-  amount      Float
-  status      String   
-  date        DateTime @default(now())
-  receiptNo   String?
+  student   Student  @relation(fields: [studentId], references: [id])
+  date      DateTime
+  status    String   @default("PRESENT")
 }
 
 model Announcement {
   id        String   @id @default(uuid())
   title     String
-  body      String
-  type      String   
-  urgency   String   
+  content   String
   date      DateTime @default(now())
+  author    String   @default("Admin")
 }
