@@ -108,11 +108,19 @@ function AppContent() {
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{ 
-            minWidth: '40px', height: '40px', background: 'var(--primary)', 
-            borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: 'white', fontWeight: 'bold', boxShadow: '0 0 20px var(--primary-glow)'
-          }}>{user.role?.[0]}</div>
-          <span style={{ fontWeight: 700, fontSize: '18px', letterSpacing: '0.05em' }}>AADHYASHREE</span>
+            minWidth: '50px', height: '50px', 
+            background: 'var(--surface)', 
+            borderRadius: '16px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 0 20px rgba(139, 92, 246, 0.2)',
+            overflow: 'hidden',
+            border: '1px solid hsla(265, 85%, 65%, 0.1)'
+          }}>
+            <img src="/logo.png" alt="Adhyashree Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontWeight: 800, fontSize: '18px', letterSpacing: '0.08em', color: 'white' }}>ADHYASHREE</span>
+            <span style={{ fontWeight: 500, fontSize: '12px', letterSpacing: '0.2em', color: 'var(--primary)', marginTop: '-4px' }}>NATYALAYA</span>
+          </div>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1, overflowY: 'auto' }}>

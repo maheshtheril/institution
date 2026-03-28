@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: hsl(265, 85%, 65%);
-  --primary-glow: hsla(265, 85%, 65%, 0.3);
-  --secondary: hsl(220, 30%, 20%);
-  --background: hsl(280, 25%, 5%);
-  --surface: hsla(280, 25%, 10%, 0.8);
-  --border: hsla(280, 25%, 25%, 0.5);
-  --text: hsl(0, 0%, 95%);
-  --text-muted: hsl(0, 0%, 70%);
-  --accent: hsl(45, 100%, 65%);
+  --primary: hsl(42, 60%, 55%); /* Muted Gold */
+  --primary-glow: hsla(42, 60%, 55%, 0.2);
+  --secondary: hsl(270, 40%, 15%); /* Deep Purple Contrast */
+  --background: hsl(280, 50%, 4%); /* Midnight Purple-Black */
+  --surface: hsla(280, 40%, 8%, 0.85);
+  --border: hsla(42, 60%, 40%, 0.15); /* Gold Trace Border */
+  --text: hsl(0, 0%, 98%);
+  --text-muted: hsl(260, 20%, 70%);
+  --accent: hsl(45, 100%, 50%); /* Bright Gold */
   --red: hsl(0, 100%, 65%);
   --green: hsl(150, 100%, 60%);
   
-  --glass: blur(10px);
+  --glass: blur(15px);
   --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
   
   font-family: 'Outfit', sans-serif;

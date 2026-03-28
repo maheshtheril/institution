@@ -32,12 +32,13 @@ app.post('/api/auth/login', asyncHandler(async (req, res) => {
     id: user.id,
     name: user.name,
     role: user.role,
+    // @ts-ignore
     studentId: user.student?.admissionId
   });
 }));
 
 // Create Initial Admin (Seed helper)
-app.post('/api/auth/seed', asyncHandler(async (req, res) => {
+app.post('/api/auth/seed', asyncHandler(async (_req, res) => {
   const admin = await prisma.user.upsert({
     where: { email: 'admin@aadhyashree.com' },
     update: {},

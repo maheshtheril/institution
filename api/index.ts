@@ -30,12 +30,13 @@ app.post('/api/auth/login', asyncHandler(async (req, res) => {
     id: user.id,
     name: user.name,
     role: user.role,
+    // @ts-ignore
     studentId: user.student?.admissionId
   });
 }));
 
 // Admin Seeding
-app.post('/api/auth/seed', asyncHandler(async (req, res) => {
+app.post('/api/auth/seed', asyncHandler(async (_req, res) => {
   const admin = await prisma.user.upsert({
     where: { email: 'admin@aadhyashree.com' },
     update: {},
@@ -50,7 +51,7 @@ app.post('/api/auth/seed', asyncHandler(async (req, res) => {
 }));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', database: 'connected (Neon Postgres)' });
 });
 
