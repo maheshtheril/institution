@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext'
 
 const Videos = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'ADMIN';
+  const isAdmin = user?.role?.toUpperCase() === 'ADMIN';
 
   const videos = [
     { id: '1', title: 'Bharatanatyam Adavus Level 1', level: 'Junior', duration: '15:20', uploaded: '2 hours ago', thumbnail: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80' },

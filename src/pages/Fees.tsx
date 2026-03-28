@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext'
 
 const Fees = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'ADMIN';
+  const isAdmin = user?.role?.toUpperCase() === 'ADMIN';
 
   const allFees = [
     { id: '1', student: 'Aarav Kumar', type: 'Monthly Fee', amount: 900, date: '2024-03-28', status: 'Paid', receipt: 'REC-001' },

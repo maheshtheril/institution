@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext'
 
 const Attendance = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'ADMIN';
+  const isAdmin = user?.role?.toUpperCase() === 'ADMIN';
 
   const allStudents = [
     { id: '1', name: 'Aarav Kumar', class: 'Junior', attendance: '92%', status: 'Present', date: '28 Mar' },

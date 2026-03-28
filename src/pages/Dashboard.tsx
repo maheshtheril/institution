@@ -4,7 +4,8 @@ import { useAuth } from '../context/AuthContext'
 
 const Dashboard = () => {
   const { user } = useAuth();
-  const isAdmin = user?.role === 'ADMIN';
+  // Robust case-insensitive check to prevent role-mismatch errors
+  const isAdmin = user?.role?.toUpperCase() === 'ADMIN';
 
   const adminStats = [
     { icon: Users, label: 'Active Students', value: '1,240', change: '+24 this month', color: 'var(--primary)' },

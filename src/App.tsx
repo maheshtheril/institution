@@ -61,7 +61,9 @@ function AppContent() {
     { title: 'Announcements', path: '/announcements', icon: Bell, roles: ['ADMIN', 'STUDENT'] },
   ];
 
-  const filteredNav = navItems.filter(item => item.roles.includes(user.role!));
+  const filteredNav = navItems.filter(item => 
+    item.roles.includes(user.role?.toUpperCase() || '')
+  );
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--background)', color: 'white' }}>

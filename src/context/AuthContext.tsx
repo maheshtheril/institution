@@ -31,14 +31,19 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       
       const data = await response.json();
       if (response.ok) {
-        setUser(data);
+        // Normalize role to ensure reliability across components
+        const normalizedUser = {
+          ...data,
+          role: data.role?.toUpperCase() || 'STUDENT'
+        };
+        setUser(normalizedUser);
       } else {
         alert(data.message || 'Login failed');
       }
     } catch (error) {
       console.error('Authentication Error:', error);
-      // Fallback for demonstration if server not running
-      if (role === 'ADMIN') {
+      // Fallback for demonstration: Ensure roles are strictly checked and strictly uppercase
+      if (role?.toUpperCase() === 'ADMIN') {
         setUser({ id: 'adm-001', name: 'Institutional Admin (Mock)', role: 'ADMIN' });
       } else {
         setUser({ id: 'std-101', name: 'Aarav Kumar (Mock)', role: 'STUDENT', studentId: 'AK2024' });
