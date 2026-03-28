@@ -75,15 +75,15 @@ const Dashboard = () => {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
              {(isAdmin ? [
-               { user: 'Rahul Sharma', action: 'Uploaded Class Video', time: '2 mins ago', amount: null, icon: Video },
-               { user: 'Anjali Gupta', action: 'Paid Monthly Fee', time: '15 mins ago', amount: '₹900', icon: CreditCard },
-               { user: 'Vikram Singh', action: 'New Student Registration', time: '1 hour ago', amount: '₹500', icon: Users },
-               { user: 'Sita Ram', action: 'Attendance Marked', time: '3 hours ago', amount: null, icon: Clock },
+               { user: 'Master Gopi', action: 'Uploaded Kathak Session-4', time: '2 mins ago', amount: null, icon: Video },
+               { user: 'Priya Iyer', action: 'Paid Bharatanatyam Advanced Fee', time: '15 mins ago', amount: '₹1,200', icon: CreditCard },
+               { user: 'Amit Hegde', action: 'New Odissi Registration', time: '1 hour ago', amount: '₹500', icon: Users },
+               { user: 'Sita Ram', action: 'Kuchipudi Attendance Marked', time: '3 hours ago', amount: null, icon: Clock },
              ] : [
-               { user: 'You', action: 'Marked Attendance (Kathak)', time: 'Today, 10:30 AM', amount: null, icon: Clock },
-               { user: 'System', action: 'New Learning Video Added', time: 'Yesterday', amount: null, icon: PlayCircle },
-               { user: 'Accounts', action: 'Monthly Invoice Shared', time: '2 days ago', amount: '₹1,200', icon: CreditCard },
-               { user: 'Teacher', action: 'Feedback Shared on Module 2', time: '3 days ago', amount: null, icon: MessageSquare },
+               { user: 'You', action: 'Completed Kathak Footwork Module', time: 'Today, 10:30 AM', amount: null, icon: Clock },
+               { user: 'System', action: 'New Bharatanatyam Tutorial Added', time: 'Yesterday', amount: null, icon: PlayCircle },
+               { user: 'Accounts', action: 'Exam Fee Invoice Shared', time: '2 days ago', amount: '₹1,200', icon: CreditCard },
+               { user: 'Teacher', action: 'Bharatanatyam Level 1 Feedback', time: '3 days ago', amount: null, icon: MessageSquare },
              ]).map((activity, i) => (
                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '16px', padding: '16px', borderRadius: '16px', background: 'rgba(255,255,255,0.02)', border: '1px solid hsla(0,0%,100%,0.03)' }}>
                   <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'var(--surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'var(--primary)' }}>
