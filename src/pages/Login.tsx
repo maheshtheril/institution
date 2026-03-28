@@ -26,15 +26,20 @@ const Login = () => {
                 <div style={{ position: 'absolute', top: '-50px', left: '-50px', width: '150px', height: '150px', background: 'var(--primary-glow)', borderRadius: '50%', filter: 'blur(40px)', opacity: 0.5 }} />
                 <div style={{ position: 'absolute', bottom: '-50px', right: '-50px', width: '150px', height: '150px', background: 'var(--accent)', borderRadius: '50%', filter: 'blur(40px)', opacity: 0.2 }} />
 
-                <div style={{ 
-                    width: '64px', height: '64px', background: 'var(--primary)', 
-                    borderRadius: '16px', margin: '0 auto 24px', 
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    boxShadow: '0 0 30px var(--primary-glow)', fontSize: '24px', fontWeight: 900
-                }}>A</div>
+                <img 
+                    src="/pwa-192x192.png" 
+                    alt="Aadhyashree Natyalaya Logo" 
+                    style={{ 
+                        width: '80px', height: '80px', 
+                        margin: '0 auto 24px', 
+                        display: 'block',
+                        borderRadius: '20px',
+                        boxShadow: '0 0 30px var(--primary-glow)'
+                    }} 
+                />
 
-                <h1 style={{ fontSize: '28px', marginBottom: '8px' }}>Institutional Access</h1>
-                <p style={{ color: 'var(--text-muted)', marginBottom: '40px', fontSize: '14px' }}>Welcome to Aadhyashree Natyalaya</p>
+                <h1 style={{ fontSize: '28px', marginBottom: '8px', fontWeight: 800 }}>Aadhyashree Natyalaya</h1>
+                <p style={{ color: 'var(--text-muted)', marginBottom: '40px', fontSize: '15px' }}>Authentic Classical Dance Institutional Portal</p>
 
                 <div style={{ 
                     display: 'flex', background: 'rgba(255,255,255,0.03)', 
