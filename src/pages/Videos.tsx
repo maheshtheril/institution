@@ -102,18 +102,26 @@ const Videos = () => {
             style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column', border: '1px solid hsla(0,0%,100%,0.05)' }}
           >
             <div 
-              style={{ position: 'relative', overflow: 'hidden', cursor: 'pointer', aspectRatio: '16/9' }}
+              style={{ 
+                position: 'relative', 
+                overflow: 'hidden', 
+                cursor: 'pointer', 
+                aspectRatio: '16/9',
+                background: 'linear-gradient(45deg, #1A1A1A, #2D2D2D)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
               onClick={() => setActiveVideo(vid)}
             >
-              <img src={vid.thumbnail} alt={vid.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8))' }} />
-              <div style={{ position: 'absolute', bottom: '12px', right: '12px', background: 'rgba(0,0,0,0.8)', padding: '4px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: 700, backdropFilter: 'blur(4px)' }}>
+              <div style={{ position: 'absolute', bottom: '12px', right: '12px', background: 'rgba(0,0,0,0.8)', padding: '4px 8px', borderRadius: '6px', fontSize: '11px', fontWeight: 700 }}>
                 {vid.duration}
               </div>
-              <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                 <div style={{ width: '56px', height: '56px', borderRadius: '50%', background: 'var(--primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 30px var(--primary-glow)' }}>
-                    <Play fill="white" size={24} />
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+                 <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'var(--primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 40px var(--primary-glow)' }}>
+                    <Play fill="white" size={28} />
                  </div>
+                 <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Click to Play Session</span>
               </div>
             </div>
             <div style={{ padding: '24px' }}>
