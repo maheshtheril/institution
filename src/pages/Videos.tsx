@@ -41,7 +41,7 @@ const Videos = () => {
       id: '5', 
       title: 'Kuchipudi: Traditional Plate Dance', 
       level: 'Advanced', duration: '28:15', uploaded: '1 week ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1508243771214-6e95d137426b?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/w8e0a7rY1kM'
     },
     { 
