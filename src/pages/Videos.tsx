@@ -13,42 +13,42 @@ const Videos = () => {
       id: '1', 
       title: 'Bharatanatyam: Basic Adavus (Session 1-5)', 
       level: 'Junior', duration: '18:45', uploaded: '2 hours ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1547049082-1a12c3bf2b76?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1580971032822-6e270914c62c?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/p1o4S7qW6R0' 
     },
     { 
       id: '2', 
       title: 'Kathak: Footwork & Chakkars Mastery', 
       level: 'Intermediate', duration: '22:10', uploaded: 'Yesterday', 
-      thumbnail: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1583095117194-967a99839958?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/6iS0K3X_tJ0'
     },
     { 
       id: '3', 
       title: 'Odissi: Mudras and Body Postures', 
       level: 'Advanced', duration: '35:20', uploaded: '3 days ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1624823183492-99079361a7a4?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/Pj_b7z3V_x8'
     },
     { 
       id: '4', 
       title: 'Mohiniyattam: Expressions (Abhinaya)', 
       level: 'All Levels', duration: '12:30', uploaded: '1 week ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1621619856624-42fd193a0661?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/3m4R30t-rXw'
     },
     { 
       id: '5', 
       title: 'Kuchipudi: Traditional Plate Dance', 
       level: 'Advanced', duration: '28:15', uploaded: '1 week ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/w8e0a7rY1kM'
     },
     { 
       id: '6', 
       title: 'Carnatic Music Rhythm Basics', 
       level: 'Junior', duration: '45:00', uploaded: '2 weeks ago', 
-      thumbnail: 'https://images.unsplash.com/photo-1514320291944-204a67ce942d?w=800&q=80',
+      thumbnail: 'https://images.unsplash.com/photo-1547049082-1a12c3bf2b76?w=800&q=80',
       embedUrl: 'https://www.youtube.com/embed/7Vp1U9Mv0K4'
     },
   ];
