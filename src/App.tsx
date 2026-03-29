@@ -119,10 +119,21 @@ function AppContent() {
           }}>
             <img src="/logo.png" alt="Adhyashree Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontWeight: 800, fontSize: '18px', letterSpacing: '0.08em', color: 'white' }}>ADHYASHREE</span>
-            <span style={{ fontWeight: 500, fontSize: '12px', letterSpacing: '0.2em', color: 'var(--primary)', marginTop: '-4px' }}>NATYALAYA</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <span style={{ fontWeight: 900, fontSize: '20px', letterSpacing: '0.1em', color: 'var(--text)', lineHeight: 1 }}>ADHYASHREE</span>
+              <span style={{ fontWeight: 600, fontSize: '13px', letterSpacing: '0.3em', color: 'var(--primary)', marginTop: '2px' }}>NATYALAYA</span>
+            </div>
+            <span style={{ fontSize: '10px', color: 'var(--text-muted)', fontStyle: 'italic', letterSpacing: '0.02em', marginTop: '2px' }}>
+              Where Tradition Meets Grace
+            </span>
           </div>
+        </div>
+        
+        <div style={{ padding: '4px 8px', background: 'var(--primary-glow)', borderRadius: '8px', border: '1px solid var(--border)' }}>
+          <span style={{ fontSize: '9px', fontWeight: 600, color: 'var(--primary)', letterSpacing: '0.05em', whiteSpace: 'normal', display: 'block', textAlign: 'center' }}>
+            BHARATANATYAM • KATHAK • KUCHIPUDI
+          </span>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', flex: 1, overflowY: 'auto' }}>

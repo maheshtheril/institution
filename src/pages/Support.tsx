@@ -13,7 +13,7 @@ const Support = () => {
       {/* Sidebar: Chat List */}
       <div className="glass-card" style={{ width: '350px', display: 'flex', flexDirection: 'column' }}>
         <div style={{ padding: '24px', borderBottom: '1px solid var(--border)' }}>
-          <h2 style={{ fontSize: '24px', marginBottom: '16px' }}>RM Support</h2>
+          <h2 style={{ fontSize: '24px', marginBottom: '16px' }}>Adhyashree Support</h2>
           <div style={{ position: 'relative' }}>
              <Smartphone size={18} style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)', color: 'var(--text-muted)' }} />
              <input className="premium-input" placeholder="Search conversations..." style={{ paddingLeft: '40px' }} />

@@ -27,7 +27,7 @@ const Login = () => {
                 <div style={{ position: 'absolute', bottom: '-50px', right: '-50px', width: '150px', height: '150px', background: 'var(--accent)', borderRadius: '50%', filter: 'blur(40px)', opacity: 0.2 }} />
 
                 <img 
-                    src="/pwa-192x192.png" 
+                    src="/logo.png" 
                     alt="Aadhyashree Natyalaya Logo" 
                     style={{ 
                         width: '80px', height: '80px', 

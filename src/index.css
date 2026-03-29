@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: hsl(42, 60%, 55%); /* Muted Gold */
-  --primary-glow: hsla(42, 60%, 55%, 0.2);
-  --secondary: hsl(270, 40%, 15%); /* Deep Purple Contrast */
-  --background: hsl(280, 50%, 4%); /* Midnight Purple-Black */
-  --surface: hsla(280, 40%, 8%, 0.85);
-  --border: hsla(42, 60%, 40%, 0.15); /* Gold Trace Border */
-  --text: hsl(0, 0%, 98%);
-  --text-muted: hsl(260, 20%, 70%);
-  --accent: hsl(45, 100%, 50%); /* Bright Gold */
-  --red: hsl(0, 100%, 65%);
-  --green: hsl(150, 100%, 60%);
+  --primary: hsl(24, 65%, 50%); /* Terracotta Orange */
+  --primary-glow: hsla(24, 65%, 50%, 0.2);
+  --secondary: hsl(15, 60%, 15%); /* Deep Maroon Brown */
+  --background: hsl(15, 50%, 5%); /* Darkest Brown-Black */
+  --surface: hsla(15, 60%, 12%, 0.85);
+  --border: hsla(24, 65%, 40%, 0.2); /* Terracotta Trace Border */
+  --text: hsl(35, 60%, 94%); /* Warm Cream/Ivory */
+  --text-muted: hsl(24, 20%, 65%);
+  --accent: hsl(24, 100%, 65%); /* Bright Highlight */
+  --red: hsl(0, 80%, 60%);
+  --green: hsl(140, 60%, 50%);
   
-  --glass: blur(15px);
-  --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  --glass: blur(20px);
+  --card-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.7);
   
   font-family: 'Outfit', sans-serif;
   line-height: 1.5;
@@ -36,8 +36,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% 0%, hsla(265, 85%, 20%, 0.5) 0%, transparent 50%),
-              radial-gradient(circle at 0% 100%, hsla(280, 25%, 10%, 1) 0%, transparent 40%),
+  background: radial-gradient(circle at 50% 0%, hsla(24, 65%, 25%, 0.4) 0%, transparent 60%),
+              radial-gradient(circle at 10% 90%, hsla(24, 40%, 15%, 1) 0%, transparent 40%),
               var(--background);
 }
 
